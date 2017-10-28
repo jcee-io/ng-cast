@@ -1,6 +1,6 @@
 <div class="video-player">
   <div class="embed-responsive embed-responsive-16by9">
-    <div ng-hide="$ctrl-video === null">Please wait, loading video</div>
+    <div ng-hide="$ctrl.video === null">Please wait, loading video</div>
     <iframe class="embed-responsive-item" ng-if="$ctrl.video" ng-src="{{'https://www.youtube.com/embed/'+ $ctrl.video.id.videoId }}"  allowFullScreen></iframe>
   </div>
   <div class="video-player-details">

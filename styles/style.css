@@ -1,11 +1,13 @@
 @import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 body {
-  background: #f1f1f1;
+  background-image: url(https://f4.bcbits.com/img/a2418085168_10.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .navbar {
-  background: #fff;
+  background: black;
   margin-bottom: 20px;
 }
 
@@ -55,6 +57,7 @@ body {
   padding: 8px;
   border: 0;
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
+
 }
 
 .video-list-entry {
@@ -83,7 +86,12 @@ body {
 .media-body {
   padding-left: 20px;
 }
-
+.media {
+  transition-duration: 300ms;
+}
+.media:hover {
+  background: #d3d3d3;
+}
 h5 {
   border: 2px solid red;
   text-align: center;

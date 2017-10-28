@@ -1,3 +1,5 @@
+
+
 angular.module('video-player')
 
   .component('app', {
@@ -7,15 +9,15 @@ angular.module('video-player')
       this.selectVideo = (video) => {  
         this.currentVideo = video;
       };
-      
-      this.searchResults = (query = 'hack reactor ALLEN dance') => {          
-        youTube.search(query, (videoData) => {
-          this.videos = videoData;
-          this.currentVideo = videoData[0];
-        });
+
+      this.searchResults = (videoData) => {          
+        this.videos = videoData;
+        this.currentVideo = videoData[0];
       };
       
-      this.searchResults();
+      
+
+      youTube.search('hello world', this.searchResults);
     },
     templateUrl: 'src/templates/app.html'
   });
