@@ -1,6 +1,12 @@
 angular.module('video-player')
 
-.component('search', {
+  .component('search', {
   // TODO
-  templateUrl: 'src/templates/search.html'
-});
+    
+    bindings: {
+      result: '<',
+      service: '<'
+    },
+    templateUrl: 'src/templates/search.html'
+  });
+
