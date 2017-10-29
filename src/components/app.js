@@ -14,10 +14,8 @@ angular.module('video-player')
         this.videos = videoData;
         this.currentVideo = videoData[0];
       };
-      
-      
-
-      youTube.search('hello world', this.searchResults);
+  
+      youTube.search('marcus dance tutorial hack reactor', this.searchResults);
     },
     templateUrl: 'src/templates/app.html'
   });
